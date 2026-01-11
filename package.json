@@ -1,0 +1,26 @@
+{
+  "name": "nanogpt-discord-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that uses dynamic NanoGPT models to generate images and Discord servers",
+  "main": "dist/bot.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/bot.js",
+    "dev": "ts-node src/bot.ts"
+  },
+  "dependencies": {
+    "discord.js": "^15.0.0",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^5.1.6",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5",
+    "bufferutil": "^4.0.8",
+    "utf-8-validate": "^6.0.4",
+    "sqlite": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
